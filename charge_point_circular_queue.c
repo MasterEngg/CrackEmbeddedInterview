@@ -10,9 +10,9 @@
 #define E_INIT_FAIL -3 // Added this error code 
 
 struct fifo {
-    int data[FIFO_SIZE];
-    int tail;
-    int head;
+    uint8_t data[FIFO_SIZE];
+    uint8_t tail;
+    uint8_t head;
 };
 
 /* I am enqueuing to the circular buffer in the fifo_write() and 
